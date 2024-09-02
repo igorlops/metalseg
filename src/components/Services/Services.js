@@ -80,7 +80,7 @@ const Services = () => {
                   <div className='card-text' >
                     {servico.detalhes}
                   </div>
-                <ButtonCTA key={index} href={'https://wa.me'} children={'Clique aqui'} className="btn btn-primary" />
+                <ButtonCTA key={index} href={'https://wa.me/5585988771069?text=Ola,%20gostaria%20de%20mais%20sobre%20seu%20servico'} children={'Clique aqui'} className="btn btn-primary" />
                 </div>
               </div>
             </div>
