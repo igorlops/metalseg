@@ -16,7 +16,10 @@ const Header = () => {
           <div class="carousel-item active">
             <img src="imgs/inicio_banner.png" class="d-block w-100" alt="..."/>
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
+            <img src="imgs/banner_new_basculante.png" class="d-block w-100" alt="..."/>
+          </div>
+          <div class="carousel-item">
             <img src="imgs/banner_portas_de_enrolar_automatico.png" class="d-block w-100" alt="..."/>
           </div>
           <div class="carousel-item">

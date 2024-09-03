@@ -8,9 +8,6 @@ export const GalleryImages = () => {
         "image_cliente":"imgs/servicos/servicos_metal_seg.jpg"
         },
         {
-        "image_cliente":"imgs/servicos/servicos_metal_seg2.jpg"
-        },
-        {
         "image_cliente":"imgs/servicos/servicos_metal_seg3.jpg"
         },
         {
@@ -24,6 +21,18 @@ export const GalleryImages = () => {
         },
         {
         "image_cliente":"imgs/servicos/servicos_metal_seg7.jpg"
+        },
+        {
+        "image_cliente":"imgs/servicos/cercas-eletricas-residencial.jpg"
+        },
+        {
+            "image_cliente":"imgs/servicos/servicos-cercas-eletricas.png"
+        },
+        {
+        "image_cliente":"imgs/servicos/concertinas.jpeg"
+        },
+        {
+        "image_cliente":"imgs/servicos/servicos-residencial-concertinas.jpg"
         },
     ];
     return (
@@ -51,6 +60,7 @@ export const GalleryImages = () => {
                 </div>
             ))}
             </div>
+            <p style={{fontSize:"40px",textAlign:"center",maxWidth:"800px",margin:"0 auto"}} className="px-5">Venha fazer parte dos nossos cases de sucesso também, não fique de fora!</p>
             <div className="d-flex justify-content-center my-5">
                 <ButtonCTA href="https://www.instagram.com/portoes_metalsegfortaleza/">Ver mais</ButtonCTA>
             </div>

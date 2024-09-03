@@ -1,8 +1,23 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Sobre.css'
 import ButtonCTA from '../Itens/ButtonCTA';
+import { Link } from 'react-scroll';
 
 const Sobre = () => {
+  const [count, setCount] = useState(0);
+    const target = 20; // Número de anos de experiência
+
+    useEffect(() => {
+        let timer;
+        if (count < target) {
+            timer = setInterval(() => {
+                setCount(prevCount => Math.min(prevCount + 1, target));
+            }, 400); // Intervalo para atualizar a contagem, ajuste conforme necessário
+        }
+
+        return () => clearInterval(timer);
+    }, [count]);
+
   return (
     <div id='Sobre' className='py-5 text-center'>
       <div className="container">
@@ -10,16 +25,17 @@ const Sobre = () => {
         <div className="divisor"></div>
 
         <div className='d-flex justify-content-around flex-row flex-wrap'>
-          <div className='col-sm-12 col-lg-6'>
-            <h4>MetalSeg</h4>
-            <p>Estamos Há Mais de 12 Anos no Mercado de Portões Automatizados em Geral. 
-              Somos Especialistas em Todos os Modelos: Portões de Correr, Portões Basculantes, 
-              Portas e Portões de Enrolar. Temos um Portfólio Completo de Modelos e Materiais 
-              Para Agradar Todos os Gostos e Bolsos</p>
+          <div className='col-sm-12 col-lg-6 px-5' style={{textAlign:"left"}}>
+            <h4 style={{fontSize:"80px"}}>MetalSeg</h4>
+            <p>Estamos há mais de 20 anos no mercado de portões automatizados em geral. 
+            Fabricamos todos os modelos em alumínio e somos especialistas em portões basculante e em porta de enrolar automática.</p>
+            <p>Temos um portfólio completo de modelos e cores, fabricamos o seu portão sob medida.</p>
             <p style={{fontFamily:"Dancing Script"}}>Marcos Lima</p>
+            <Link className='btn btn-warning-light' to="projetos" smooth={true} duration={500}>Ver Portfólio</Link>
           </div>
-          <div className='col-sm-12 col-lg-6'>
-            <h4>MetalSeg</h4>
+          <div className='col-sm-12 col-lg-6 px-5'>
+            <img src={`imgs/servicos/servicos_metal_seg3.jpg`} style={{width:"100%"}}/>
+            <p className='bg-dark text-white p-5' style={{fontSize:"40px"}}>+{count} DE EXPERTISE</p>
 
           </div>
         </div>

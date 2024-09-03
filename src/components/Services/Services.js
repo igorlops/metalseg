@@ -14,25 +14,37 @@ const Services = () => {
   let listServicos = [
     {
       "image":"imgs/porta-automatica.jpg",
-      "title":"Porta Industrial de Enrolar",
-      "detalhes":`O portão de garagem basculante, que também é conhecido como portão flutuante, 
-      se diferencia dos demais por uma característica principal: seu sistema de abertura. 
-      Ele não abre como uma porta tradicional ou uma porta de correr!
+      "title":"Porta de enrolar automática",
+      "detalhes":`
+        Somos referência quanto a fabricação, instalação e manutenção de portas de enrolar automática.
 
-      Na realidade, o portão basculante para garagem abre na vertical, mantendo sua folha móvel suspensa, 
-      de modo a permitir a passagem de automóveis e pessoas.
+        Alguns dos benefícios:
+        Lâminas reforças o que trazem mais segurança
 
-`,
+        Sistema de travamento por engrenagem do motorredutor
+
+        Baixo nível de manutenção
+
+        Não requer uso de cadeados e placas anti-arrombamentos
+
+        Mais rapidez e praticidade na abertura e fechamento do estabelecimento
+
+        Valorização do estabelecimento
+        Pintura eletrostática de maior resistência as intempéries
+
+        Soleira tubular que leva mais segurança em tentativas de arrombamentos`,
     },
     {
       "image":"imgs/portao-basculante.png",
       "title":"Portão basculante",
-      "detalhes":`O portão de garagem basculante, que também é conhecido como portão flutuante, 
-      se diferencia dos demais por uma característica principal: seu sistema de abertura. 
-      Ele não abre como uma porta tradicional ou uma porta de correr!
+      "detalhes":`
+        Somos pioneiros nesse modelo, nosso método de instalação é inovador seguro e com design avançado.
 
-      Na realidade, o portão basculante para garagem abre na vertical, 
-      mantendo sua folha móvel suspensa, de modo a permitir a passagem de automóveis e pessoas.
+        Principais características do portão basculante:
+
+        Não ocupa espaço lateral do muro, ideal para casas estreitas ou que não possuam a frente livre.
+
+        Durabilidade, o Aluminio é um material leve, e a estrutura do basculante em aço galvanizado casa  direitinho dando durabilidade e segurança.
 
 `,
     },
@@ -56,7 +68,7 @@ const Services = () => {
        eletrificada. Uma das maneiras de se fazer proteção perimétrica, 
        é adquirir a cerca Concertina. Trata-se de uma cerca de segurança
        laminada, de forma espiralada com lâminas pontiagudas, cortantes e 
-      penetrantes. Além disso, a Concertina pode ser eletrificada e ter alarme.`,
+      penetrantes.`,
     }
   ]
 
@@ -72,7 +84,7 @@ const Services = () => {
           {listServicos.map((servico, index) => (
             <div className="servico-individual mb-3">
               <div className={`card text-center`} style={{width:'300px'}}>
-                <img src={servico.image} className='card-img-top' style={{width:'100%'}} alt={servico.title}/>
+                <img src={servico.image} className='card-img-top' style={{width:'100%',height:"200px"}} alt={servico.title}/>
                 <div className='card-body'>
                   <div className='card-title'>
                     <h4>{servico.title}</h4>
