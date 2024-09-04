@@ -1,10 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-scroll';
-import { ThemeContext } from '../../theme/Theme' 
 
 const Navbar = () => {
   
-  const {theme, setTheme} = useContext(ThemeContext);
   const [isScrolled, setIsScrolled] = useState(false);
 
 
@@ -20,7 +18,6 @@ const Navbar = () => {
     };
   }, []);
   const handleThemeChange = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
   };
   return (
     <div id='navbar-desktop'>

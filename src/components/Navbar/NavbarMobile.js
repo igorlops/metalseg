@@ -1,13 +1,7 @@
 import React, { useContext } from 'react'
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-import { ThemeContext } from '../../theme/Theme'; // Assuming your theme folder is named 'theme'
 
 const NavbarMobile = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
-
-  const handleThemeChange = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
 
   return (
     <div id='navbar-mobile' className='mb-5'>

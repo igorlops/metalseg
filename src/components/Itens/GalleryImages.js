@@ -60,7 +60,7 @@ export const GalleryImages = () => {
                 </div>
             ))}
             </div>
-            <p style={{fontSize:"40px",textAlign:"center",maxWidth:"800px",margin:"0 auto"}} className="px-5">Venha fazer parte dos nossos cases de sucesso também, não fique de fora!</p>
+            <p className="cta-projetos px-5">Venha fazer parte dos nossos cases de sucesso também, não fique de fora!</p>
             <div className="d-flex justify-content-center my-5">
                 <ButtonCTA href="https://www.instagram.com/portoes_metalsegfortaleza/">Ver mais</ButtonCTA>
             </div>

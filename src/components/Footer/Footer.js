@@ -1,9 +1,7 @@
 import React, { useContext } from 'react';
-import { ThemeContext } from '../../theme/Theme';
 
 function Footer() {
 
-  const { theme } = useContext(ThemeContext)
   return (
     <footer className={`footer text-center border-top py-3`}>
       <div className="container">

@@ -1,9 +1,7 @@
-import {useContext, useEffect} from 'react'
+import {useEffect} from 'react'
 import './Services.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-import { ThemeContext } from '../../theme/Theme';
-import { GalleryImages } from '../Itens/GalleryImages';
 import ButtonCTA from '../Itens/ButtonCTA';
 
 const Services = () => {

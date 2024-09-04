@@ -1,8 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import './Header.css'
 import Aos from 'aos';
-import { ThemeContext } from '../../theme/Theme';
-import ButtonCTA from '../Itens/ButtonCTA';
 
 const Header = () => {
   useEffect(()=>{
