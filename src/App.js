@@ -37,7 +37,7 @@ function App() {
   }, []);
 
   return (
-      <div id="App" className={'bg-light text-dark-50'}>
+      <div id="App" className={''}>
           <Navbar/>
           <NavbarMobile/>
 

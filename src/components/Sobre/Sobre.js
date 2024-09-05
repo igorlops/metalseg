@@ -27,9 +27,9 @@ const Sobre = () => {
         <div className='d-flex justify-content-around flex-row flex-wrap'>
           <div className='col-sm-12 col-lg-6' style={{textAlign:"left"}}>
             <h4 className={'titulo-metalseg'}>MetalSeg</h4>
-            <p>Estamos há mais de 20 anos no mercado de portões automatizados em geral. 
-            Fabricamos todos os modelos em alumínio e somos especialistas em portões basculante e em porta de enrolar automática.</p>
-            <p>Temos um portfólio completo de modelos e cores, fabricamos o seu portão sob medida.</p>
+            <p className='me-5'>Estamos há mais de 20 anos no mercado de portões automatizados em geral. 
+            Fabricamos todos os modelos em alumínio e somos especialistas em portões basculantes e em portas de enrolar automática.<br/>
+            Temos um portfólio completo de modelos e cores, fabricamos o seu portão sob medida.</p>
             <p style={{fontFamily:"Dancing Script"}}>Marcos Lima</p>
             <Link className='btn btn-warning-light mb-5' to="projetos" smooth={true} duration={500}>Ver Portfólio</Link>
           </div>

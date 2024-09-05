@@ -16,7 +16,9 @@
 #App #navbar-mobile {
   display: none;
 }
-
+body {
+  background-color: #fff!important;
+}
 #button-whatsapp{
   font-size:40px;
   color: white;
