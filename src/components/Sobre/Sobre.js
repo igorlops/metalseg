@@ -34,7 +34,7 @@ const Sobre = () => {
             <Link className='btn btn-warning-light mb-5' to="projetos" smooth={true} duration={500}>Ver Portfólio</Link>
           </div>
           <div className='col-sm-12 col-lg-6'>
-            <img src={`imgs/servicos/servicos_metal_seg3.jpg`} style={{width:"100%"}}/>
+            <img src={`imgs/servicos/servicos_metal_seg5.jpg`} style={{width:"100%"}}/>
             <p className='bg-dark text-white p-5' style={{fontSize:"40px"}}>+{count} DE EXPERTISE</p>
 
           </div>
