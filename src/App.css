@@ -119,6 +119,14 @@ body {
 .titulo-metalseg {
   font-size: 80px!important;
 }
+
+@media screen and (max-width:992px) {
+  .titulo-section-light {
+    z-index: 9999!important;
+    font-size: 3.3em!important;
+    margin-bottom: 5px;
+  }
+}
 @media screen and (max-width:600px) {
   #App #navbar-desktop {
     display: none;
